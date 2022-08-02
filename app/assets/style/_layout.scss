@@ -1,0 +1,82 @@
+header{
+  background-color: $primary;
+  a{
+    color: white;
+    &:hover{
+      color:$secondary;
+    }
+  }
+  .menu{
+    column-gap: 64px;
+    padding: 25px 0px;
+    font-size: 20px;
+    line-height: 1.5;
+    @include pad(){
+     display: none;
+    }
+  }
+  .menu-hamburger{
+    display: none;
+    width: 30px;
+    height: 20px;
+    @include pad(){
+      display: block;
+      padding: 5px 8px 30px 0px;
+    }
+  }
+}
+.logo a{
+background: url(../images/logo-new.png) no-repeat;
+display: block;
+text-indent: 101%;
+overflow: hidden;
+white-space: nowrap;
+width: 80px;
+height: 49px;
+}
+
+
+footer{
+  background-color: $primary;
+  color: white;
+  .footer-menu{
+    font-size: 20px;
+    line-height: 1.5;
+    color:white;
+  }
+  .footer-menu-list{
+    column-gap: 48px;
+    padding-top: 48px;
+  }
+  a{
+    color: white;
+    &:hover{
+      color:$secondary;
+    }
+   }
+   .footer-icon{
+    column-gap: 16px;
+    padding-top: 48px;
+   }
+   .footer-icon img{
+    width: 48px;
+    height: 48px;
+  }
+  .footer-contact{
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  .footer-contact img{
+    width: 44px;
+    height: 44px;
+  }
+  h3{
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  .footer-detail-list{
+    font-size: 14px;
+    line-height: 1.5;
+    column-gap: 64px;
+  }
+}

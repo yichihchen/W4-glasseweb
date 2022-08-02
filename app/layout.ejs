@@ -11,13 +11,55 @@
 
 <body>
   <header class="header">
-    這是 header
+    <div class="container space-between align-center">
+    <ul>
+      <li><h1 class="logo"><a href="#">公司logo</a></h1></li>  
+    </ul>       
+     <ul class="menu d-f">
+      <li><a href="#">系列鏡框</a></li>
+      <li><a href="#">門市據點</a></li>
+      <li><a href="#">部落格</a></li>
+      <li><a href="#">常見問題</a></li>
+     </ul>
+     <ul class="menu-hamburger">
+      <li><img src="./assets/images/漢堡menu_white_24dp.svg" alt="漢堡選單"></li>
+     </ul>
+    </div>
   </header>
 
   <%- contents %>
 
   <footer class="footer">
-    footer
+    <div class="container">
+      <div class="footer-menu space-between align-center">
+        <ul class="footer-menu-list d-f">
+         <li><a href ="#">首頁</a></li>
+         <li><a href ="#">系列鏡框</a></li>
+         <li><a href ="#">門市據點</a></li>
+         <li><a href ="#">部落格</a></li>
+         <li><a href ="#">常見問題</a></li>
+       </ul>
+       <ul class="footer-icon d-f">
+        <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="fb"></a></li>
+        <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line"></a></li>
+        <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt="ig"></a></li>
+       </ul>
+      </div>
+      <!--contact-->
+      <ul class="footer-contact mt36">
+        <li><h3><img class="mr16" src="./assets/images/call-outline-白色.png" alt="call"><a href="tel:+886-0800-000-000">0800-000-000</a></h3></li>
+        <li><h3><img class="mr16 mt8 mb32" src="./assets/images/email_white.png" alt="telephone"><a href="mailto:glasses@business.com">glasses@business.com</a></h3></li>
+      </ul>
+      <div class="footer-detail space-between mt32">
+       <ul class="copyright">
+        <li>Copyright © 2020 Glasses.All rights reserved.</li>
+       </ul>
+       <ul class="footer-detail-list d-f mb32">
+        <li><a href="#">隱私權政策</a></li>
+        <li><a href="#">服務條款</a></li>
+       </ul>
+      </div>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
