@@ -1,23 +1,23 @@
 header{
   background-color: $primary;
+  .header-menu{
+  padding: 16px 0px;
+  }
   .menu{ 
     font-size: 20px;
     line-height: 1.5;
     column-gap: 64px;
-    padding: 25px 0px;
     @include pad(){
      display: none;
     }
    
   }
-
   .menu a{
     color: white;    
     &:hover{
       color:$secondary;
     }
   }
-
   .menu-hamburger{
     display: none;
     width: 30px;
@@ -26,12 +26,9 @@ header{
       display: block;      
     }
   }
-  .logo{
-    @include pad (){
-      padding: 16px 0px;
-    }
+  
   }
-}
+
 .logo a{
 background: url(../images/logo-new.png) no-repeat;
 display: block;
@@ -50,11 +47,12 @@ footer{
     font-size: 20px;
     line-height: 1.5;
     color:white;
+    padding-top: 48px ;
   }
   .footer-menu-list{
-    padding: 48px 0px 32px 0px;
-    @include mobile(){
-      display: none;
+    column-gap: 48px;
+    @include pad(){
+    display: none;
     }
   }
   a{
@@ -65,27 +63,30 @@ footer{
    }
    .footer-icon{
     column-gap: 16px;
-    padding-top: 48px;
-   }
+  }
    .footer-icon img{
     width: 48px;
     height: 48px;
   }
-  .footer-contact{
-    display: block;
+  .footer-contact{    
     border-bottom: 1px solid white;
+    margin-top: 24px;
+    font-size: 36px;
+    line-height: 1.5;
   }
   .footer-contact img{
     width: 44px;
     height: 44px;
   }
-  h3{
-    font-size: 36px;
-    line-height: 1.5;
-  }
+  
   .footer-detail-list{
     font-size: 14px;
     line-height: 1.5;
-    column-gap: 64px;
+    column-gap: 48px;
+    padding-bottom: 32px;
+    @include pad(){
+      padding-bottom: 40px;
+    }
   }
+  
 }

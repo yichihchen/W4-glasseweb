@@ -18,7 +18,6 @@ body {
 
     @include pad() {
       max-width: 720px;// (696 + 24 gutter)
-      padding:0 24px; 
     }
 
     @include mobile() {
