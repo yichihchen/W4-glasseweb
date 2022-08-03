@@ -118,28 +118,30 @@ a {
 
 header {
   background-color: #AA0601; }
-  header a {
-    color: white; }
-    header a:hover {
-      color: #650300; }
   header .menu {
+    font-size: 20px;
+    line-height: 1.5;
     -webkit-column-gap: 64px;
        -moz-column-gap: 64px;
             column-gap: 64px;
-    padding: 25px 0px;
-    font-size: 20px;
-    line-height: 1.5; }
+    padding: 25px 0px; }
     @media (max-width: 720px) {
       header .menu {
         display: none; } }
+  header .menu a {
+    color: white; }
+    header .menu a:hover {
+      color: #650300; }
   header .menu-hamburger {
     display: none;
     width: 30px;
     height: 20px; }
     @media (max-width: 720px) {
       header .menu-hamburger {
-        display: block;
-        padding: 5px 8px 30px 0px; } }
+        display: block; } }
+  @media (max-width: 720px) {
+    header .logo {
+      padding: 16px 0px; } }
 
 .logo a {
   background: url(../images/logo-new.png) no-repeat;
@@ -158,10 +160,10 @@ footer {
     line-height: 1.5;
     color: white; }
   footer .footer-menu-list {
-    -webkit-column-gap: 48px;
-       -moz-column-gap: 48px;
-            column-gap: 48px;
-    padding-top: 48px; }
+    padding: 48px 0px 32px 0px; }
+    @media (max-width: 374px) {
+      footer .footer-menu-list {
+        display: none; } }
   footer a {
     color: white; }
     footer a:hover {
