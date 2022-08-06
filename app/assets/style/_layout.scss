@@ -43,11 +43,12 @@ height: 49px;
 footer{
   background-color: $primary;
   color: white;
-  .footer-menu{
+  .footer-menu-all{
     font-size: 20px;
     line-height: 1.5;
     color:white;
     padding-top: 48px ;
+    border-bottom: 1px solid white;
   }
   .footer-menu-list{
     column-gap: 48px;
@@ -69,7 +70,7 @@ footer{
     height: 48px;
   }
   .footer-contact{    
-    border-bottom: 1px solid white;
+    
     margin-top: 24px;
     font-size: 36px;
     line-height: 1.5;
