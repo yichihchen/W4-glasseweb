@@ -90,21 +90,90 @@
 }
 
 .classic{
+
     padding-top: 80px;
     padding-bottom: 80px;
-
-    img{
-        width: 416px;
-        height: 416px;
-    }
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+       }
+    
     .classic-card{
         margin-top: 48px;
         column-gap: 24px;
-        h3{
+        @media(max-width:1080px){
+            row-gap: 24px;
+        }
+        li{
+            @media(max-width:1080px){
+                width: 100%;
+            }
+        } 
+        img{
+            width: 416px;
+            height: 416px;
+            @media(max-width:1320px){
+                width: 336px;
+                height: 336px;
+            }
+            @include pad(){
+                width: 348px;
+                height: 348px;
+            }
+        }
+        h5{
          margin-top: 8px;
          color:$primary;
+         font-size: $font-xl;
+         line-height: 1.5;
          font-style: italic;
          font-weight: 900;
         }
     }
 }
+
+.design{
+    background: url(../images/index-bg-md.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include pad(){
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    .design-content{
+        margin-top: 48px;
+        @media(max-width:1300px){
+            row-gap:24px;
+        }
+    }
+    img{
+        width: 648px;
+        height: 240px;
+    @media(max-width:1300px){
+        width: 696px;
+        
+    @include pad(){
+        width: 348px;
+    }
+    }
+    }
+    h3{
+        color:white;
+    }
+    h5{
+        color:$primary;
+        font-size: $font-xl;
+        line-height: 1.5;
+        font-style: italic;
+        font-weight: 900;
+        background-color: white;       
+      }
+    .design-content-double{
+        border-right: 1px solid rgb(159, 165, 159);
+    }
+    }
+    
+    
