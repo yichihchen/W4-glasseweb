@@ -4,12 +4,16 @@
     text-align: center;
 }
 
+
 //flex
 .d-f{
     display: flex;
 }
 .flex-column{
     flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 .space-between{
     display: flex;

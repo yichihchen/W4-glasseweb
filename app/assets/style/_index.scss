@@ -2,19 +2,36 @@
     .container{
         height: 100%;
     }
-    background: url(../images/home-header.png)center center;
+    background: url(../images/home-header.png);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     height: 840px;
     color: $secondary;
-
+    @include pad(){
+        padding: 0px 24px;
+        background: url(../images/home-header-sm.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    @include mobile(){
+        padding: 0 14px;
+    }
     h2{
         font-size: 36px;
-        line-height: 1.5;      
+        line-height: 1.5;
+        @include pad(){
+            font-size:$font-sm;
+        }      
     }
     h4{
         font-size: 64px;
         line-height: 1.5;
+        font-weight: 900;
+        @include pad(){
+            font-size: $font-md;
+        }
     }
     .banner-bottom{
         margin-top: 10px;
@@ -23,9 +40,71 @@
         padding: 6px 12px;
         font-size: 20px;
         line-height: 1.5;
+        @include mobile(){
+            margin-top: 8px;
+        }
     }
-    
     }
 
+.special{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #FBF2F2;
+   @include pad(){
+    padding-top: 40px;
+    padding-bottom: 40px;
+   }
+    h5{
+        font-size: $font-md;
+        line-height: 1.5;
+        color: $secondary;
+        font-weight: 700;
+        margin-top: 24px;
+    }
+    p{
+        font-size: $font-sm;
+        line-height: 1.5;
+        text-align: left;
+        margin-top: 8px;
+    }
+    .special-card{
+        margin-top: 24px;
+        column-gap: 24px;
+        @media(max-width:925px){
+            row-gap:36px;
+        }
+        @include pad(){
+            margin-top: 32px;
+        }
 
-   
+    }
+    .special-card li{
+        width: 23%;
+       @media(max-width:925px){
+        width: 48%;
+       }
+       @media(max-width:625px){
+        width: 100%;
+       }
+    }
+}
+
+.classic{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    img{
+        width: 416px;
+        height: 416px;
+    }
+    .classic-card{
+        margin-top: 48px;
+        column-gap: 24px;
+        h3{
+         margin-top: 8px;
+         color:$primary;
+         font-style: italic;
+         font-weight: 900;
+        }
+    }
+}
