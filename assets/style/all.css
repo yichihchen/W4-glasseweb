@@ -65,8 +65,7 @@ body {
   padding: 0 12px; }
   @media (max-width: 720px) {
     .container {
-      max-width: 720px;
-      padding: 0 24px; } }
+      max-width: 720px; } }
   @media (max-width: 374px) {
     .container {
       max-width: 374px; } }
@@ -74,10 +73,19 @@ body {
 a {
   text-decoration: none; }
 
+.text-center {
+  text-align: center; }
+
 .d-f {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .space-between {
   display: -webkit-box;
@@ -87,6 +95,22 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.justify-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.justify-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .align-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +118,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.align-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.pb32 {
+  padding-bottom: 32px; }
 
 .mt8 {
   margin-top: 8px; }
@@ -118,13 +153,14 @@ a {
 
 header {
   background-color: #AA0601; }
+  header .header-menu {
+    padding: 16px 0px; }
   header .menu {
     font-size: 20px;
     line-height: 1.5;
     -webkit-column-gap: 64px;
        -moz-column-gap: 64px;
-            column-gap: 64px;
-    padding: 25px 0px; }
+            column-gap: 64px; }
     @media (max-width: 720px) {
       header .menu {
         display: none; } }
@@ -139,9 +175,6 @@ header {
     @media (max-width: 720px) {
       header .menu-hamburger {
         display: block; } }
-  @media (max-width: 720px) {
-    header .logo {
-      padding: 16px 0px; } }
 
 .logo a {
   background: url(../images/logo-new.png) no-repeat;
@@ -155,13 +188,17 @@ header {
 footer {
   background-color: #AA0601;
   color: white; }
-  footer .footer-menu {
+  footer .footer-menu-all {
     font-size: 20px;
     line-height: 1.5;
-    color: white; }
+    color: white;
+    padding-top: 48px;
+    border-bottom: 1px solid white; }
   footer .footer-menu-list {
-    padding: 48px 0px 32px 0px; }
-    @media (max-width: 374px) {
+    -webkit-column-gap: 48px;
+       -moz-column-gap: 48px;
+            column-gap: 48px; }
+    @media (max-width: 720px) {
       footer .footer-menu-list {
         display: none; } }
   footer a {
@@ -171,25 +208,45 @@ footer {
   footer .footer-icon {
     -webkit-column-gap: 16px;
        -moz-column-gap: 16px;
-            column-gap: 16px;
-    padding-top: 48px; }
+            column-gap: 16px; }
   footer .footer-icon img {
     width: 48px;
     height: 48px; }
   footer .footer-contact {
-    display: block;
-    border-bottom: 1px solid white; }
+    margin-top: 24px;
+    font-size: 36px;
+    line-height: 1.5; }
   footer .footer-contact img {
     width: 44px;
     height: 44px; }
-  footer h3 {
-    font-size: 36px;
-    line-height: 1.5; }
   footer .footer-detail-list {
     font-size: 14px;
     line-height: 1.5;
-    -webkit-column-gap: 64px;
-       -moz-column-gap: 64px;
-            column-gap: 64px; }
+    -webkit-column-gap: 48px;
+       -moz-column-gap: 48px;
+            column-gap: 48px;
+    padding-bottom: 32px; }
+    @media (max-width: 720px) {
+      footer .footer-detail-list {
+        padding-bottom: 40px; } }
+
+.banner {
+  background: url(../images/home-header.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 840px;
+  color: #650300; }
+  .banner h2 {
+    font-size: 36px;
+    line-height: 1.5; }
+  .banner h4 {
+    font-size: 64px;
+    line-height: 1.5; }
+  .banner .banner-bottom {
+    margin-top: 10px;
+    background: #AA0601;
+    color: white;
+    padding: 6px 12px;
+    display: inline-block; }
 
 /*# sourceMappingURL=all.css.map */
