@@ -236,6 +236,8 @@ footer {
   background-size: cover;
   height: 840px;
   color: #650300; }
+  .banner .container {
+    height: 100%; }
   .banner h2 {
     font-size: 36px;
     line-height: 1.5; }
@@ -246,6 +248,8 @@ footer {
     margin-top: 10px;
     background: #AA0601;
     color: white;
-    padding: 6px 12px; }
+    padding: 6px 12px;
+    font-size: 20px;
+    line-height: 1.5; }
 
 /*# sourceMappingURL=all.css.map */
