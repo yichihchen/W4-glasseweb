@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .justify-center{
     display: flex;
     justify-content: center;
@@ -36,6 +37,9 @@
     align-items: flex-end;
 }
 //間距
+.pt72{
+    padding-top: 72px;
+}
 .pb32{
     padding-bottom: 32px;
 }
@@ -53,6 +57,9 @@
     margin-top: 48px;
 }
 
+.mt72{
+    margin-top: 72px;
+}
 .mr16{
     margin-right: 16px;
 }
