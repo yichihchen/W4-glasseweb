@@ -63,24 +63,118 @@
 }
 .new-collection{
     padding-top: 80px;
+    @include pad(){
+        padding-top: 40px;
+    }
     h2{
         font-size: 42px;
         line-height: 1.5;
+        @include pad(){
+            font-size: $font-md;
+        }
     }
     h3{
         font-size: $font-lg;
         line-height: 1.5;
         color: black;
         font-weight: 400;
+        @include pad(){
+            font-size: $font-md;
+           
+        }
     }
     .new-collection-list{
-        margin-top: 32px;
+        margin-top: 32px;        
         column-gap: 24px;
+        row-gap: 80px;
+        margin-bottom: 80px;
+        font-size: $font-md;
+        line-height: 1.5;
+        @include pad(){
+            margin-top: 24px;
+            row-gap: 40px;
+            .new-collection-list-all{
+                max-width: 100%;
+            }
+        @include mobile(){
+            row-gap: 24px;
+            margin-bottom: 64px;
+        }
+        }
         img{
             width: 416px;
             height: 224px;
+            @media(max-width:880px){
+                width: 336px;
+            }
+            @include pad(){
+                width: 348px;
+            }
+        }
+        span{
+            color:$primary;
+            font-weight: 500;
         }
 
     }
-    
+    .new-collection-list-color {
+       
+    li{
+        &:first-child{
+        content:"";
+        display: inline-block;
+        background-color:#5F3E2D;
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+        border-radius: 15%;
+        }
+        &:last-child{
+        content:"";
+        display: inline-block;
+        background-color:#B75929;
+        height: 24px;
+        width: 24px;
+        border-radius: 15%;
+        }
+      }
+    }
+}
+.pagination{
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    @include pad(){
+        font-size: $font-sm;
+        margin-bottom: 64px;
+    }
+    .pagination-item{
+        border-top: 1px solid #555555;
+        border-left: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+                
+        a{
+            display: inline-block;
+            color: #555555;
+            padding: 12px 16px;            
+         }
+            &:hover{
+                background-color: #000000;
+                color: #e5e5e5;
+            }
+        
+    }
+    .pagination-item-br{
+        border: 1px solid #555555;
+        
+        a{
+            display: inline-block;
+            color: #555555; 
+            padding: 12px 16px;
+         }
+            &:hover{
+                background-color: #000000;
+                color: #e5e5e5;
+            }
+    }
 }
