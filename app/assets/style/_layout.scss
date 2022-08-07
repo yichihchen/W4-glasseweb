@@ -12,7 +12,7 @@ header{
     }
    
   }
-  .menu a{
+   .menu a{
     color: white;    
     &:hover{
       color:$secondary;
@@ -48,7 +48,11 @@ footer{
     line-height: 1.5;
     color:white;
     padding-top: 48px ;
-  
+    a{color: white;
+      &:hover{
+        color:$secondary;
+      }
+    }
     border-bottom: 1px solid white;
     @media(max-width:767px){
       padding-top: 24px ;
@@ -62,9 +66,8 @@ footer{
       display: none;
       
     }
-    }
-  
-  a{
+    }  
+    .footer-menu-list a{
     color: white;
     &:hover{
       color:$secondary;
@@ -120,6 +123,12 @@ footer{
     line-height: 1.5;
     column-gap: 48px;
     padding-bottom: 32px;
+     a{
+      color: white;
+       &:hover{
+      color:$secondary;
+    }
+    }
     @include pad(){
       padding-bottom: 24px;
       font-size: $font-sm;
