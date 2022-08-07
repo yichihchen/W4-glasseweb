@@ -48,14 +48,22 @@ footer{
     line-height: 1.5;
     color:white;
     padding-top: 48px ;
+  
     border-bottom: 1px solid white;
+    @media(max-width:767px){
+      padding-top: 24px ;
+    }
+    }
   }
   .footer-menu-list{
     column-gap: 48px;
-    @include pad(){
-    display: none;
+    margin-bottom: 36px;
+    @media(max-width:767px){
+      display: none;
+      
     }
-  }
+    }
+  
   a{
     color: white;
     &:hover{
@@ -64,21 +72,48 @@ footer{
    }
    .footer-icon{
     column-gap: 16px;
+    @include pad(){
+      column-gap: 8px;
+    }
   }
    .footer-icon img{
     width: 48px;
     height: 48px;
+    @include pad(){
+      width: 24px;
+      height: 24px;
+    }
   }
-  .footer-contact{    
-    
-    margin-top: 24px;
+  .footer-contact{       
+    margin-bottom: 32px;
     font-size: 36px;
     line-height: 1.5;
+    @include pad(){
+      font-size: 16px;
+      margin-bottom: 24px;
+      margin-top: 0;
+    }
   }
   .footer-contact img{
+    margin-right: 16px;    
     width: 44px;
     height: 44px;
+    @include pad(){
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+    }
   }
+  .footer-detail{
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    @include pad(){
+      margin-top: 24px;
+      flex-direction: column;
+    }
+    }
+
   
   .footer-detail-list{
     font-size: 14px;
@@ -86,8 +121,13 @@ footer{
     column-gap: 48px;
     padding-bottom: 32px;
     @include pad(){
-      padding-bottom: 40px;
+      padding-bottom: 24px;
+      font-size: $font-sm;
+      flex-direction: column;
+      column-gap: 0px;
+      li{
+          margin-top: 8px;
+      }
     }
   }
   
-}
