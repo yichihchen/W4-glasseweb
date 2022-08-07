@@ -140,6 +140,9 @@ h3 {
       -ms-flex-align: end;
           align-items: flex-end; }
 
+.pt72 {
+  padding-top: 72px; }
+
 .pb32 {
   padding-bottom: 32px; }
 
@@ -154,6 +157,9 @@ h3 {
 
 .mt48 {
   margin-top: 48px; }
+
+.mt72 {
+  margin-top: 72px; }
 
 .mr16 {
   margin-right: 16px; }
@@ -207,41 +213,94 @@ footer {
     color: white;
     padding-top: 48px;
     border-bottom: 1px solid white; }
-  footer .footer-menu-list {
-    -webkit-column-gap: 48px;
-       -moz-column-gap: 48px;
-            column-gap: 48px; }
-    @media (max-width: 720px) {
-      footer .footer-menu-list {
-        display: none; } }
-  footer a {
-    color: white; }
-    footer a:hover {
-      color: #650300; }
-  footer .footer-icon {
-    -webkit-column-gap: 16px;
-       -moz-column-gap: 16px;
-            column-gap: 16px; }
-  footer .footer-icon img {
-    width: 48px;
-    height: 48px; }
-  footer .footer-contact {
-    margin-top: 24px;
-    font-size: 36px;
-    line-height: 1.5; }
-  footer .footer-contact img {
-    width: 44px;
-    height: 44px; }
-  footer .footer-detail-list {
-    font-size: 14px;
-    line-height: 1.5;
-    -webkit-column-gap: 48px;
-       -moz-column-gap: 48px;
-            column-gap: 48px;
-    padding-bottom: 32px; }
-    @media (max-width: 720px) {
-      footer .footer-detail-list {
-        padding-bottom: 40px; } }
+    @media (max-width: 767px) {
+      footer .footer-menu-all {
+        padding-top: 24px; } }
+
+.footer-menu-list {
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+  margin-bottom: 36px; }
+  @media (max-width: 767px) {
+    .footer-menu-list {
+      display: none; } }
+
+a {
+  color: white; }
+  a:hover {
+    color: #650300; }
+
+.footer-icon {
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px; }
+  @media (max-width: 720px) {
+    .footer-icon {
+      -webkit-column-gap: 8px;
+         -moz-column-gap: 8px;
+              column-gap: 8px; } }
+
+.footer-icon img {
+  width: 48px;
+  height: 48px; }
+  @media (max-width: 720px) {
+    .footer-icon img {
+      width: 24px;
+      height: 24px; } }
+
+.footer-contact {
+  margin-bottom: 32px;
+  font-size: 36px;
+  line-height: 1.5; }
+  @media (max-width: 720px) {
+    .footer-contact {
+      font-size: 16px;
+      margin-bottom: 24px;
+      margin-top: 0; } }
+
+.footer-contact img {
+  margin-right: 16px;
+  width: 44px;
+  height: 44px; }
+  @media (max-width: 720px) {
+    .footer-contact img {
+      margin-right: 8px;
+      width: 24px;
+      height: 24px; } }
+
+.footer-detail {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 1.5; }
+  @media (max-width: 720px) {
+    .footer-detail {
+      margin-top: 24px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.footer-detail-list {
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+  padding-bottom: 32px; }
+  @media (max-width: 720px) {
+    .footer-detail-list {
+      padding-bottom: 24px;
+      font-size: 16px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-column-gap: 0px;
+         -moz-column-gap: 0px;
+              column-gap: 0px; }
+      .footer-detail-list li {
+        margin-top: 8px; } }
 
 .banner {
   background: url(../images/home-header.png);
@@ -398,5 +457,94 @@ footer {
     background-color: white; }
   .design .design-content-double {
     border-right: 1px solid #9fa59f; }
+
+.recommend {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  @media (max-width: 720px) {
+    .recommend {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  .recommend .recommend-content {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    margin-top: 48px; }
+    @media (max-width: 1320px) {
+      .recommend .recommend-content {
+        row-gap: 24px; } }
+    @media (max-width: 720px) {
+      .recommend .recommend-content {
+        row-gap: 16px; } }
+    .recommend .recommend-content li {
+      width: 306px; }
+      @media (max-width: 1320px) {
+        .recommend .recommend-content li {
+          width: 47%; } }
+      @media (max-width: 720px) {
+        .recommend .recommend-content li {
+          width: 100%; } }
+  .recommend .recommend-word {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    height: 205px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .recommend .recommend-word p {
+      margin-top: 8px; }
+  .recommend span {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #707070; }
+
+.contact-us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #FBF2F2; }
+  @media (max-width: 720px) {
+    .contact-us {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  .contact-us .contact-us-form {
+    width: 50%;
+    text-align: left; }
+    @media (max-width: 992px) {
+      .contact-us .contact-us-form {
+        width: 75%; } }
+    @media (max-width: 720px) {
+      .contact-us .contact-us-form {
+        width: 100%; } }
+    .contact-us .contact-us-form p {
+      font-size: 20px;
+      line-height: 1.5;
+      padding-top: 48px; }
+  .contact-us .contact-form-content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 8px; }
+    .contact-us .contact-form-content label {
+      margin-top: 16px;
+      margin-bottom: 8px; }
+    .contact-us .contact-form-content input {
+      font-size: 16px;
+      line-height: 1.5;
+      height: 36px; }
+    .contact-us .contact-form-content .checkbox input {
+      margin-top: 16px;
+      width: 24px;
+      height: 24px; }
+    .contact-us .contact-form-content .agree-bottom {
+      margin-top: 48px;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: #AA0601;
+      color: white;
+      width: 416px;
+      height: 56px; }
+      @media (max-width: 720px) {
+        .contact-us .contact-form-content .agree-bottom {
+          width: 348px; } }
 
 /*# sourceMappingURL=all.css.map */
