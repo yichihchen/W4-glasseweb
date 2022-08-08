@@ -213,6 +213,23 @@ header {
       header .menu-hamburger {
         display: block; } }
 
+.mobile-hamburger {
+  display: none;
+  background-color: #AA0601;
+  font-size: 20px; }
+  .mobile-hamburger:active {
+    display: block; }
+  .mobile-hamburger li {
+    border-top: 1px solid #fcfbfb;
+    border-left: 1px solid #fcfbfb;
+    border-right: 1px solid #fcfbfb; }
+  .mobile-hamburger .mobile-hamburger-leave {
+    border: 1px solid #fcfbfb; }
+  .mobile-hamburger a {
+    display: block;
+    color: white;
+    padding: 20px 80px; }
+
 .logo a {
   background: url(../images/logo-new.png) no-repeat;
   display: block;
