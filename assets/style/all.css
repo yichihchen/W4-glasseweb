@@ -720,6 +720,9 @@ footer {
       display: inline-block;
       color: #555555;
       padding: 12px 16px; }
+      @media (max-width: 720px) {
+        .pagination .pagination-item a {
+          padding: 12px; } }
     .pagination .pagination-item :hover {
       background-color: #000000;
       color: #e5e5e5; }
@@ -729,6 +732,9 @@ footer {
       display: inline-block;
       color: #555555;
       padding: 12px 16px; }
+      @media (max-width: 720px) {
+        .pagination .pagination-item-br a {
+          padding: 12px; } }
     .pagination .pagination-item-br :hover {
       background-color: #000000;
       color: #e5e5e5; }
