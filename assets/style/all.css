@@ -217,7 +217,7 @@ header {
   display: none;
   background-color: #AA0601;
   font-size: 20px; }
-  .mobile-hamburger:active {
+  .mobile-hamburger.active {
     display: block; }
   .mobile-hamburger li {
     border-top: 1px solid #fcfbfb;
