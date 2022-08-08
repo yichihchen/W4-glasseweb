@@ -1,5 +1,5 @@
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
+$(document).ready(function(){
+  $('.menu-hamburger').click(function(event){
+    $('.mobile-hamburger').toggleclass('active');
+ });
 });

@@ -25,9 +25,29 @@ header{
     @include pad(){
       display: block;      
     }
+  }  
   }
-  
+.mobile-hamburger{
+  display: none;
+  background-color:$primary;
+  font-size: 20px;
+  &:active{
+    display: block;
   }
+  li{
+    border-top: 1px solid rgb(252, 251, 251);
+    border-left: 1px solid rgb(252, 251, 251);
+    border-right: 1px solid rgb(252, 251, 251);
+  }
+  .mobile-hamburger-leave{
+    border: 1px solid rgb(252, 251, 251);
+  }
+  a{
+    display: block;
+    color:white;
+    padding: 20px 80px;
+  }
+}
 
 .logo a{
 background: url(../images/logo-new.png) no-repeat;
