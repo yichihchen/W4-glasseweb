@@ -35,12 +35,10 @@ header{
     display: block;
   }
   li{
-    border-top: 1px solid rgb(252, 251, 251);
-    border-left: 1px solid rgb(252, 251, 251);
-    border-right: 1px solid rgb(252, 251, 251);
-  }
-  .mobile-hamburger-leave{
     border: 1px solid rgb(252, 251, 251);
+  }
+  li:not(:last-child){
+    border-bottom: none;
   }
   a{
     display: block;

@@ -170,19 +170,15 @@
                 width: 100%;
             }
         }
-        
-
         &-pic1{
           background:url(../images/home-section4-1-sm.png);
           height: 240px;         
           @include picture();
         }
-
         &-pic2{
             background:url(../images/home-section4-2.png);
             height: 240px;            
             @include picture();            
-                 
           }
 
         margin-top: 48px;
@@ -212,7 +208,7 @@
         font-weight: 900;
         background-color: white;       
       }
-    .design-content-double{
+    :first-child h5{
         border-right: 1px solid rgb(159, 165, 159);
     }
     }
@@ -296,15 +292,46 @@
             line-height: 1.5;
             height: 36px;
             background-color: transparent;
+            padding: 6px 0px 6px 12px;
+            width: 100%;
            }
+          
            textarea{
             background-color: transparent;
+            width: 100%;
            }
-           .checkbox{
-            input{
-                margin-top: 16px;
-                width: 24px;
-                height: 24px;                
+
+    
+           input[type="checkbox"]{
+            position: relative;
+            width: 24px;
+            height: 24px;
+            border: 1px solid rgb(18, 18, 18);
+            border-radius: 4px;
+            cursor: pointer;
+            appearance: none;
+          
+            &::before{
+                position: absolute;
+                content: '';
+                display: block;
+                border-style: solid;
+                border-color: rgb(18, 18, 18);
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+                top: 4px;
+                left: 6px;
+                width: 6px;
+                height: 12px;
+                opacity: 0;
+            } 
+            &:checked{
+                background: transparent;
+                color: white;
+                border-color: rgb(18, 18, 18);
+                &::before{
+                    opacity: 1;
+                }
             }
            }
            .agree-bottom{           
@@ -313,13 +340,13 @@
             line-height: 1.5;
             background-color:$primary;
             color:white;
-            width: 416px;
+            width:55%;
             height: 56px;
             &:hover{
               opacity:0.8;
             }
             @include pad(){
-                width: 348px;
+                width:100%;
             }             
            }
         }
