@@ -220,11 +220,9 @@ header {
   .mobile-hamburger.active {
     display: block; }
   .mobile-hamburger li {
-    border-top: 1px solid #fcfbfb;
-    border-left: 1px solid #fcfbfb;
-    border-right: 1px solid #fcfbfb; }
-  .mobile-hamburger .mobile-hamburger-leave {
     border: 1px solid #fcfbfb; }
+  .mobile-hamburger li:not(:last-child) {
+    border-bottom: none; }
   .mobile-hamburger a {
     display: block;
     color: white;
@@ -538,7 +536,7 @@ footer {
     font-style: italic;
     font-weight: 900;
     background-color: white; }
-  .design .design-content-double {
+  .design :first-child h5 {
     border-right: 1px solid #9fa59f; }
 
 .recommend {
@@ -613,26 +611,56 @@ footer {
       font-size: 16px;
       line-height: 1.5;
       height: 36px;
-      background-color: transparent; }
+      background-color: transparent;
+      padding: 6px 0px 6px 12px;
+      width: 100%; }
     .contact-us .contact-form-content textarea {
-      background-color: transparent; }
-    .contact-us .contact-form-content .checkbox input {
-      margin-top: 16px;
+      background-color: transparent;
+      width: 100%; }
+    .contact-us .contact-form-content input[type="checkbox"] {
+      position: relative;
       width: 24px;
-      height: 24px; }
+      height: 24px;
+      border: 1px solid #121212;
+      border-radius: 4px;
+      cursor: pointer;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none; }
+      .contact-us .contact-form-content input[type="checkbox"]::before {
+        position: absolute;
+        content: '';
+        display: block;
+        border-style: solid;
+        border-color: #121212;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: 4px;
+        left: 6px;
+        width: 6px;
+        height: 12px;
+        opacity: 0; }
+      .contact-us .contact-form-content input[type="checkbox"]:checked {
+        background: transparent;
+        color: white;
+        border-color: #121212; }
+        .contact-us .contact-form-content input[type="checkbox"]:checked::before {
+          opacity: 1; }
     .contact-us .contact-form-content .agree-bottom {
       margin-top: 48px;
       font-size: 16px;
       line-height: 1.5;
       background-color: #AA0601;
       color: white;
-      width: 416px;
+      width: 55%;
       height: 56px; }
       .contact-us .contact-form-content .agree-bottom:hover {
         opacity: 0.8; }
       @media (max-width: 720px) {
         .contact-us .contact-form-content .agree-bottom {
-          width: 348px; } }
+          width: 100%; } }
 
 .product-banner {
   max-width: 1320px;
@@ -650,7 +678,6 @@ footer {
     .product-menu {
       font-size: 16px; } }
   .product-menu li {
-    padding: 24px 0px;
     display: block;
     width: 100%;
     border-left: 1px solid #bfbdbd; }
@@ -659,7 +686,9 @@ footer {
     .product-menu li:hover {
       border-bottom: 8px solid #AA0601; }
   .product-menu a {
-    color: black; }
+    color: black;
+    display: block;
+    padding: 24px 0px; }
 
 .product-picture-content li {
   width: 100%;
