@@ -559,7 +559,10 @@ footer {
            -moz-column-gap: 24px;
                 column-gap: 24px; } }
     .recommend .recommend-content li {
-      width: calc((100%-72px)/4); }
+      width: calc((100% - 72px)/ 4); }
+      @media (max-width: 992px) {
+        .recommend .recommend-content li {
+          width: calc((100% - 24px)/2); } }
       @media (max-width: 720px) {
         .recommend .recommend-content li {
           width: 100%; } }
