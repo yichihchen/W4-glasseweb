@@ -230,7 +230,10 @@
             column-gap: 24px;
         }   
         li{
-            width:calc((100%-72px)/4);
+            width:calc((100% - 72px)/ 4);
+            @media (max-width:992px){
+                width: calc((100% - 24px)/2);
+            }
             @include pad(){
                 width: 100%;
             }   
